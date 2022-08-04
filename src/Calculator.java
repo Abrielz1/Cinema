@@ -9,7 +9,7 @@ public class Calculator {
         for (MediaItem item : mediaItems){
         if (item instanceof Movie){
             Movie movie = (Movie) item;
-            items += movie.getRuntime();
+            items += item.getRuntime();
         }  else if (item instanceof Series){
             Series series = (Series) item;
                items += series.getRuntime() * series.getSeriesCount();
