@@ -17,7 +17,7 @@ public class Practicum {
                 System.out.println("Введите название фильма:");
                 String title = scanner.next();
                 System.out.println("Введите длительность фильма в минутах:");
-                int runtime = scanner.nextInt();
+                int runtime = Integer.parseInt(scanner.nextLine());
                 Movie movie = new Movie(title, runtime);
                 mediaItems.add(movie);
 
