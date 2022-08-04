@@ -12,7 +12,7 @@ public class Calculator {
             items += movie.getRuntime();
         }  else if (item instanceof Series){
             Series series = (Series) item;
-               items += item.getRuntime() * series.getSeriesCount();
+               items += series.getRuntime() * series.getSeriesCount();
            }
         }
         return ((double) items) / 60 / 24;
